@@ -31,6 +31,7 @@ class ItemController extends Controller
             'name' => $request->name,
             'description' => $request->description,
             'image_path' => $imagePath,
+            'minimum_price' => $request->minimum_price
         ]);
 
         return redirect()->route('items.index');
