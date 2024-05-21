@@ -3,6 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ItemController; // Including a Controller
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -18,3 +20,9 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+// Adding routes for Item
+Route::get('/items/create', [ItemController::class, 'create'])->name('items.create');
+Route::post('/items', [ItemController::class, 'store'])->name('items.store');
+Route::get('/items', [ItemController::class, 'index'])->name('items.index');
