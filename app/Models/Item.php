@@ -18,3 +18,4 @@ class Item extends Model
         'minimum_price',
     ];
 
+}
