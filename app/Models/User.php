@@ -44,4 +44,14 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    /**
+     * Get the items for the user.
+     */
+
+    public function items()
+    {
+        return $this->hasMany(Item::class);
+    }
+    
 }

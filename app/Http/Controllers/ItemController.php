@@ -39,7 +39,7 @@ class ItemController extends Controller
 
     public function index()
     {
-        $items = Item::all();
-        return view('items.index', compact('items'));
+        $items = Item::with('user')->get();
+        return view('index', compact('items'));
     }
 }

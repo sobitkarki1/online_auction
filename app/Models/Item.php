@@ -16,6 +16,13 @@ class Item extends Model
         'description',
         'image_path',
         'minimum_price',
+        'user_id', 
     ];
+
+    // Define the relationship with the User model
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 
 }
