@@ -4,11 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Item;
+use Illuminate\Support\Facades\Auth;
+
 
 class ItemController extends Controller
 {
-    // 
-
+    
     public function create()
     {
         return view('items.create');
@@ -20,26 +21,37 @@ class ItemController extends Controller
             'name' => 'required|string|max:255',
             'description' => 'required|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'minimum_price' => 'required',
         ]);
 
-        $imagePath = null;
-        if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('images', 'public');
+        $item = new Item();
+        $item->name = $request->input('name');
+        $item->description = $request->input('description');
+        $item->minimum_price = $request->input('minimum_price');
+
+        // Handle file upload
+        if ($request->hasFile('image_path')) {
+            $filePath = $request->file('image_path')->store('public/images');
+            $item->image_path = $filePath;
         }
 
-        Item::create([
-            'name' => $request->name,
-            'description' => $request->description,
-            'image_path' => $imagePath,
-            'minimum_price' => $request->minimum_price
-        ]);
+        // Associate the authenticated user
+        $item->user_id = Auth::id();
 
-        return redirect()->route('items.index');
+        $item->save();
+
+        return redirect()->route('index')->with('success', 'Item uploaded successfully');
     }
 
     public function index()
     {
         $items = Item::with('user')->get();
         return view('index', compact('items'));
+    }
+
+    public function simple_list()
+    {
+        $items = Item::all();
+        return view('items.index', compact('items')); 
     }
 }

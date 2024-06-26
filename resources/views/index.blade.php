@@ -68,7 +68,7 @@
             <a class="border" href="seemore/fulldeteals7.html">See more</a></div>
     </div>
 
-    <div class-"box">
+    <div class="box">
         <h3> This is where I will test the add item</h3>
 
         @foreach($items as $item)
@@ -77,14 +77,12 @@
             <div class="box-img" style="background-image: url('{{$item->image}}');"></div>
             <h2>Current Price: {{ $item->price }}</h2>
             <a class="border" href="seemore/fulldeteals.html">See more</a>
-            
-
         </div>
         @endforeach
 
     </div>
     <div class="add">
-        <a class="border" href="#">Add-Item</a>
+        <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
     </div>
     <footer>
         <div class="footer">

@@ -3,9 +3,9 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\ItemController; // Including a Controller
+use App\Http\Controllers\ItemController;
 
-Route::get('/', [ItemController::class, 'index']);
+Route::get('/', [ItemController::class, 'index'])->middleware('auth')->name('index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -21,6 +21,7 @@ require __DIR__.'/auth.php';
 
 
 // Adding routes for Item
-Route::get('/items/create', [ItemController::class, 'create'])->name('items.create');
-Route::post('/items', [ItemController::class, 'store'])->name('items.store');
-Route::get('/items', [ItemController::class, 'index'])->name('items.index');
+Route::get('/items/create', [ItemController::class, 'create'])->middleware('auth');
+Route::post('/items', [ItemController::class, 'store'])->name('items.store')->middleware('auth');
+Route::get('/items', [ItemController::class, 'simple_list'])->name('items.simple_list');
+

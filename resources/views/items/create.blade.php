@@ -11,7 +11,13 @@
 
 </head>
 <body>
-    <div class="container">
+        
+        <div class="container">
+        @auth
+            <p>Logged in as: {{ auth()->user()->name }}</p>
+        @else
+            <p>You are not logged in.</p>
+        @endauth
         <h2> Add Item</h2>
         <form action="{{ route('items.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
@@ -32,7 +38,7 @@
 
         <div class="form-group">
             <label for="min_price">Minimum Price:</label>
-            <input type="number" id="minimum_price" name="minimum_price" min="0.01" step="0.01" required="">
+            <input type="text" id="minimum_price" name="minimum_price" required="">
         </div>
         <button type="submit">Create Item</button>
     </form>
