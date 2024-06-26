@@ -51,7 +51,7 @@ class ItemController extends Controller
 
     public function simple_list()
     {
-        $items = Item::all();
-        return view('items.index', compact('items')); 
+        $items = Item::with('user')->get();
+        return view('items.simple_list', compact('items')); 
     }
 }
