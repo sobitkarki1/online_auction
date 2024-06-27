@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ItemController;
+use App\Http\Controllers\BidController;
 
 Route::get('/', [ItemController::class, 'index'])->middleware('auth')->name('index');
 
@@ -32,3 +33,7 @@ Route::get('/contactus', function () {
 
 
 Route::get('/seemore/{id}', [ItemController::class, 'show'])->middleware('auth');
+
+
+
+Route::post('/seemore/{id}', [BidController::class, 'store'])->middleware('auth')->name('bid.store');

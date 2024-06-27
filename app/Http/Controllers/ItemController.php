@@ -57,7 +57,7 @@ class ItemController extends Controller
 
 public function show($id)
     {
-        $item = Item::find($id);
+        $item = Item::with('bid.user')->find($id);
         return view('seemore', compact('item')); 
     }
 }

@@ -22,6 +22,7 @@
                     <P>{{$item->minimum_price}}</P>
                 </div>
             </div>
+            
             <label>Highest Bid</label>
             <div class="smallbox">
                 <div class="smallbox1">
@@ -31,13 +32,22 @@
                     <P>5000</P>
                 </div>
             </div>
-           
+           <form method="POST" action="">
             <label>Place Your Bid</label>
             <br>
             <input type="number" placeholder="put your price">
+        
             <br>
-            <a class="border" href="#">Submit</a>
+            <button type="submit">Submit</button>
+            </form>
         </div>
     </div>
+    <h2>Bids</h2>
+    <ul>
+        @foreach ($item->bids as $bid)
+            <li>{{ $bid->user->name }}: Rs.{{ $bid->bid_price}}</li>
+        @endforeach
+    </ul>
+
 </body>
 </html>
