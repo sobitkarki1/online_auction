@@ -45,7 +45,7 @@
     <h2>Bids</h2>
     <ul>
         @foreach ($item->bids as $bid)
-            <li>{{ $bid->user->name }}: Rs.{{ $bid->bid_price}}</li>
+            <li>{{ $bid->user->name }}: ${{ $bid->bid_price}}</li>
         @endforeach
     </ul>
 
