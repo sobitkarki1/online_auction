@@ -54,4 +54,10 @@ class ItemController extends Controller
         $items = Item::with('user')->get();
         return view('items.simple_list', compact('items')); 
     }
+
+public function show($id)
+    {
+        $item = Item::find($id);
+        return view('seemore', compact('item')); 
+    }
 }

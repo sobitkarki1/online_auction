@@ -25,3 +25,10 @@ Route::get('/items/create', [ItemController::class, 'create'])->middleware('auth
 Route::post('/items', [ItemController::class, 'store'])->name('items.store')->middleware('auth');
 Route::get('/items', [ItemController::class, 'simple_list'])->name('items.simple_list');
 
+
+Route::get('/contactus', function () {
+    return view('contactus');
+});
+
+
+Route::get('/seemore/{id}', [ItemController::class, 'show'])->middleware('auth');
