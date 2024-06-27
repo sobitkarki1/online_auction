@@ -72,8 +72,12 @@
         <br><br>
         <h3> This is where I will test the add item</h3>
 
-        <div class="content">
+        
         @foreach($items as $item)
+
+        @if($loop->iteration % 4 == 1)
+        <div class="content">
+        @endif
         
           <div class="box">
             <h2>{{ $item->name }}</h2>
@@ -84,11 +88,14 @@
         
 
         @if($loop->iteration % 4 == 0)
-        <br>
+        </div>
         @endif
 
-        @endforeach
+
         
+
+        @endforeach
+
         </div>
     
     <div class="add">
