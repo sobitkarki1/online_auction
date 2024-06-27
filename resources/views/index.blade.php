@@ -18,9 +18,11 @@
             <a class="border" href="#">About</a>
             <a class="border" href="login.html">Login</a>
             <a class="border" href="register.html">Register</a>
+        <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
+    
             </div>
             <div class="inputbutton">
-            <input id="input" type="text" placeholder="search here" >
+            <input id="input" type="text" placeholder="Search here" >
             <div class="icon">
             <i class="fa-solid fa-magnifying-glass"></i>
             </div>
@@ -98,9 +100,6 @@
 
         </div>
     
-    <div class="add">
-        <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
-    </div>
     <footer>
         <div class="footer">
             <a class="border last" href="#">About</a>
