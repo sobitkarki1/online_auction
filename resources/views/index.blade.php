@@ -70,7 +70,7 @@
     </div>
 
         <br><br>
-        <h3> This is where I will test the add item</h3>
+        
 
         
         @foreach($items as $item)
@@ -82,7 +82,7 @@
           <div class="box">
             <h2>{{ $item->name }}</h2>
             <div class="box-img" style="background-image: url('{{ asset(str_replace('public', 'storage', $item->image_path)) }}');"></div>
-            <h2>Current Price: {{ $item->price }}</h2>
+            <h2>Current Price: {{ $item->minimum_price}}</h2>
             <a class="border" href="seemore/fulldetails.html">See more</a>
           </div>   
         
