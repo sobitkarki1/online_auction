@@ -75,7 +75,12 @@ public function show($id)
     
         $user = User::select('id', 'name')->find($userId);
 
+        $createdAt = $item->created_at;
 
-        return view('seemore', compact('item', 'items', 'bids', 'highestBid')); 
+        $currentTime = now();
+        $remainingDays = $item->created_at->diffInDays($currentTime);
+
+
+        return view('seemore', compact('item', 'items', 'bids', 'highestBid', 'remainingDays')); 
     }
 }
