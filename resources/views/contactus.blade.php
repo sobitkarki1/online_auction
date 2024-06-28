@@ -60,12 +60,16 @@
         <h4>Comment</h4><br><br>
         <section class="comment">
             <div class="commentd">
-                <form action="form-handler.php" method="post">
+                <form action="{{ route('feedback.store') }}" method="post">
+                @csrf
                     <br><dir><input type="text" name="name" placeholder="Enter your name" required></dir>
                     <br><dir><input type="email" name="email" placeholder="Enter email address" required></dir>
                     <br><dir><textarea class="message" rows="8" name="message" placeholder="Message" required></textarea></dir>
                     <br><dir><button type="submit" class="red-button">Send Message</button></dir><br>
                 </form>
+                @if(session('success'))
+                <p>{{ session('success') }}</p>
+                @endif
             </div>
 
         </section>
