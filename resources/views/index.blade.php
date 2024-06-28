@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>newindex</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/newindex.css') }}">
 
@@ -15,23 +15,10 @@
             <div class="ray">
             <a class="border" href="{{url('/')}}">Home</a>
             <a class="border" href="{{url('/contactus')}}">Contact-us</a>
-            <a class="border" href="#">About</a>
-            <!---
-            // if not logged in it appears as it is and
-            // if not, then it shows logged in as username and logout link
-            --->
-            @auth
-                 <span class="border">Logged in as {{ Auth::user()->name }}</span>
-                 <a class="border" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-             @csrf
-             </form>
-            @else
-            <a class="border" href="{{ route('login') }}">Login</a>
-            <a class="border" href="{{ route('register') }}">Register</a>
-            @endauth
-
-            <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
+            <a class="border" href="{{url('/about')}}">About</a>
+            <a class="border" href="login.html">Login</a>
+            <a class="border" href="register.html">Register</a>
+        <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
     
             </div>
             <div class="inputbutton">

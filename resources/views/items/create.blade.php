@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Item</title>
+    <title>Add Item</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -13,11 +13,7 @@
 <body>
         
         <div class="container">
-        @auth
-            <p>Logged in as: {{ auth()->user()->name }}</p>
-        @else
-            <p>You are not logged in.</p>
-        @endauth
+      
         <h2> Add Item</h2>
         <form action="{{ route('items.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
@@ -45,6 +41,14 @@
     <div class="note">
         <p>Note: All items are auctioned for 15 days</p>
     </div>
+    
+    <div class="login">
+    @auth
+            <p class="logintext">Logged in as: {{ auth()->user()->name }}</p>
+        @else
+            <p class="logintext">You are not logged in.</p>
+        @endauth
+        </div>
 </div>
 </body>
 </html>

@@ -59,20 +59,7 @@ class ItemController extends Controller
 
 public function show($id)
     {
-        $item = Item::with('bid.user')->find($id); // this is current single item
-
-        $items = Item::with('bid.user')->find($id);
-
-        $userId = Auth::id();
-
-
-         $bids = Bid::where('item_id', $id)
-                   ->get();
-        
-    
-        $user = User::select('id', 'name')->find($userId);
-
-
-        return view('seemore', compact('item', 'items', 'bids')); 
+        $item = Item::with('bid.user')->find($id);
+        return view('seemore', compact('item')); 
     }
 }

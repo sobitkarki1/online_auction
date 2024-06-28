@@ -31,6 +31,9 @@ Route::get('/contactus', function () {
     return view('contactus');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
 
 Route::get('/seemore/{id}', [ItemController::class, 'show'])->middleware('auth');
 
