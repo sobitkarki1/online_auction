@@ -69,10 +69,13 @@ public function show($id)
          $bids = Bid::where('item_id', $id)
                    ->get();
         
+                 // Fetch the highest bid
+        $highestBid = Bid::where('item_id', $id)->max('bid_price');  
+        
     
         $user = User::select('id', 'name')->find($userId);
 
 
-        return view('seemore', compact('item', 'items', 'bids')); 
+        return view('seemore', compact('item', 'items', 'bids', 'highestBid')); 
     }
 }

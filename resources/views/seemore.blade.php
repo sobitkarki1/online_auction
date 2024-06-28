@@ -12,7 +12,11 @@
             <img src= "{{ asset(str_replace('public', 'storage', $item->image_path)) }}">
         </div>
         <div class="box2">
+        
             <h1>{{$item->name}}</h1>
+
+            <p class="description"> Description: {{ $item->description}}</p>
+            
             <label>Minimum Price</label>
             <div class="smallbox">
                 <div class="smallbox1">
@@ -29,15 +33,21 @@
                     <p>NPR</p>
                 </div>
                 <div class="smallbox2">
-                    <P>5000</P>
+                    <P>{{$highestBid}}</P>
                 </div>
             </div>
            <form method="POST" action="{{ route('bid.store', ['id' => $item->id]) }}">
             @csrf
             <label>Place Your Bid</label>
             <br>
+            
             <input type="number" placeholder="put your price" name="bid_price">
-        
+            @if(session('fail'))
+    
+      <p class="fail"> {{ session('fail') }} </p>
+
+@endif
+
             <br>
             <button type="submit">Submit</button>
             </form>
@@ -62,5 +72,6 @@
       <p class="alert-text"> {{ session('success') }} </p>
     </div>
 @endif
+
 </body>
 </html>

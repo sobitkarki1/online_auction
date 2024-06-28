@@ -37,7 +37,7 @@ img {
 .box2{
     width: 20%;
     height: 500px;
-    font-size: 30px;
+    font-size: 15px;
     color: antiquewhite;
     margin-top: 80px;
     margin-left: 80px;
@@ -48,8 +48,9 @@ img {
 }
 .smallbox1{
     width: 70px;
-    border: 1px solid antiquewhite;
-    background-color: rgba(76, 161, 133 ,0.5);
+    border: 1px solid black;
+    background-color:white;
+    color: black;
 }
 .smallbox11{
     width: 190px;
@@ -58,8 +59,9 @@ img {
 }
 .smallbox2{
     width: 130px;
-    border: 1px solid antiquewhite;
-    background-color: rgba(76, 161, 133 ,0.5);
+    border: 1px solid black;
+    background-color:  white;
+    color: black;
 
 }
 input{
@@ -85,4 +87,13 @@ a{
 button{
    width:80px;
     height:30px;
+}
+.fail{
+    font-size:16px;
+    color:red;
+}
+.description{
+    font-size: 15px;
+    margin-top:10px;
+    margin-bottom:10px;
 }
