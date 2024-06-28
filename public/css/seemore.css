@@ -78,3 +78,11 @@ a{
 .border:hover{
     border: 2px solid antiquewhite;
 }
+
+.alert-text{
+    color: antiquewhite;
+}
+button{
+   width:80px;
+    height:30px;
+}

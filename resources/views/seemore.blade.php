@@ -44,22 +44,22 @@
         </div>
     </div>
     <div class="">
-    <h2>Bids</h2>
+    <h2 class="alert-text">Bids</h2>
     
     @if($bids)
     @foreach($bids as $bid)
     
     <ul>
-        <li> User ID:{{ $bid->user_id }} , Bid: Rs.{{ $bid->bid_price }}</li>
+        <li class="alert-text"> User ID:{{ $bid->user_id }} , Bid: Rs.{{ $bid->bid_price }}</li>
     </ul>
     @endforeach
 @else
-    <p>No bids available.</p>
+    <p class="alert-text">No bids available.</p>
 @endif
     <!-- sucess message -->
 @if(session('success'))
     <div class="alert alert-success">
-        {{ session('success') }}
+      <p class="alert-text"> {{ session('success') }} </p>
     </div>
 @endif
 </body>
