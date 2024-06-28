@@ -51,6 +51,12 @@
             <br>
             <button type="submit">Submit</button>
             </form>
+            
+            <form action="{{ route('items.destroy', $item->id) }}" method="POST" style="margin-top: 20px;">
+                @csrf
+                @method('DELETE')
+                <button type="submit" onclick="return confirm('Are you sure you want to delete this item?')">Delete</button>
+            </form>
         </div>
     </div>
     <div class="">

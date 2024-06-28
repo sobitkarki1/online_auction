@@ -46,4 +46,7 @@ Route::get('/search', [SearchController::class, 'index'])->name('search.index');
 
 Route::get('/search/results', 'SearchController@results')->name('search.results');
 
+Route::delete('/items/{id}', [ItemController::class, 'destroy'])->name('items.destroy');
+
+
 

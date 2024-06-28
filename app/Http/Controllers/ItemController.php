@@ -97,6 +97,24 @@ public function show($id)
         $remainingDays = $remainingDays + 15;
         $remainingDaysInteger = (int)  $remainingDays;
 
+        
         return view('seemore', compact('item', 'items', 'bids', 'highestBid', 'remainingDaysInteger')); 
+
     }
+    public function destroy($id)
+{
+    $item = Item::find($id);
+
+    if (!$item) {
+        return redirect()->route('index')->with('error', 'Item not found');
+    }
+
+    if ($item->user_id !== Auth::id()) {
+        return redirect()->route('index')->with('error', 'You do not have permission to delete this item');
+    }
+
+    $item->delete();
+
+    return redirect()->route('index')->with('success', 'Item deleted successfully');
+}
 }
