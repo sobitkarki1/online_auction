@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Item;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Bid;
+use App\Models\User;
 
 
 class ItemController extends Controller
