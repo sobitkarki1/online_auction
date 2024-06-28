@@ -29,7 +29,8 @@
 
         <div class="form-group">
             <label for="image">Image:</label><br>
-            <input type="file" id="image_path" name="image_path">
+
+            <input type="file" id="image_path" name="image_path" onchange="readURL(this)" accept="image/*">
         </div>
 
         <div class="form-group">

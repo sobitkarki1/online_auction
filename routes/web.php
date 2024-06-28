@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\BidController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\FeedbackController;
 
 Route::get('/', [ItemController::class, 'index'])->middleware('auth')->name('index');
 
@@ -45,5 +46,12 @@ Route::post('/seemore/{id}', [BidController::class, 'store'])->middleware('auth'
 Route::get('/search', [SearchController::class, 'index'])->name('search.index');
 
 Route::get('/search/results', 'SearchController@results')->name('search.results');
+
+Route::delete('/items/{id}', [ItemController::class, 'destroy'])->name('items.destroy');
+
+Route::get('/feedback', [FeedbackController::class, 'index'])->name('feedback.index');
+Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
+Route::get('/feedbacks', [FeedbackController::class, 'index'])->name('feedbacks.index');
+
 
 
