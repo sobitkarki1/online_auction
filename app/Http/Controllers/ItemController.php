@@ -7,7 +7,9 @@ use App\Models\Item;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Bid;
 use App\Models\User;
+use Illuminate\Support\Facades\Log;
 
+use Carbon\Carbon;
 
 class ItemController extends Controller
 {
@@ -75,12 +77,26 @@ public function show($id)
     
         $user = User::select('id', 'name')->find($userId);
 
+        Log::info('Remaining days start');
+        $createdAt = $item->created_at;
+        Log::info('2');
+  
+        // Fetch created_at timestamp of the item
         $createdAt = $item->created_at;
 
-        $currentTime = now();
-        $remainingDays = $item->created_at->diffInDays($currentTime);
+        // Get the current time
+        $currentTime = Carbon::now();
+        
+        // Calculate the remaining days (including negative values)
+        $remainingDays = $currentTime->diffInDays($createdAt, false);
+        
+        // Log the remaining days (including negative values)
+        Log::info('Remaining days: ' . $remainingDays);
+        
+        // Add 15 days to remaining days (allowing for negative values)
+        $remainingDays = $remainingDays + 15;
+        $remainingDaysInteger = (int)  $remainingDays;
 
-
-        return view('seemore', compact('item', 'items', 'bids', 'highestBid', 'remainingDays')); 
+        return view('seemore', compact('item', 'items', 'bids', 'highestBid', 'remainingDaysInteger')); 
     }
 }

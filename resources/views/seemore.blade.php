@@ -47,7 +47,7 @@
       <p class="fail"> {{ session('fail') }} </p>
 
 @endif
-<p class="time_remaining"> Time remaining: {{ remainingDays}} days remaining</p>
+<p class="time_remaining"> Time remaining: {{ $remainingDaysInteger}} days remaining</p>
             <br>
             <button type="submit">Submit</button>
             </form>
