@@ -43,11 +43,16 @@
         </div>
     </div>
     <h2>Bids</h2>
+    
+    @if($item->bids)
+    @foreach($item->bids as $bid1)
+    
     <ul>
-        @foreach ($item->bids as $bid)
-            <li>{{ $bid->user->name }}: ${{ $bid->bid_price}}</li>
-        @endforeach
+        <li>{{ $bid1->user->name }}: ${{ $bid1->bid_price }}</li>
     </ul>
-
+    @endforeach
+@else
+    <p>No bids available.</p>
+@endif
 </body>
 </html>

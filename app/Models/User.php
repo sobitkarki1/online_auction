@@ -56,6 +56,6 @@ class User extends Authenticatable
   
     public function bids()
     {
-        return $this->hasMany(Bid::class);
+        return $this->belongsTo(Bid::class);
     }
 }

@@ -11,11 +11,11 @@ class Bid extends Model
     protected $fillable = ['user_id', 'item_id', 'bid_price'];
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->hasMany(User::class);
     }
 
     public function item()
     {
-        return $this->belongsTo(Item::class);
+        return $this->hasMany(Item::class);
     }
 }

@@ -15,7 +15,7 @@
             <div class="ray">
             <a class="border" href="{{url('/')}}">Home</a>
             <a class="border" href="{{url('/contactus')}}">Contact-us</a>
-            <a class="border" href="#">About</a>
+            <a class="border" href="{{url('/about')}}">About</a>
             <a class="border" href="login.html">Login</a>
             <a class="border" href="register.html">Register</a>
         <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
