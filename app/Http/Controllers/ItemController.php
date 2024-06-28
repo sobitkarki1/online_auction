@@ -59,7 +59,28 @@ class ItemController extends Controller
 
 public function show($id)
     {
-        $item = Item::with('bid.user')->find($id);
-        return view('seemore', compact('item')); 
+        $item = Item::with('bid.user')->find($id); // this is current single item
+
+        $items = Item::with('bid.user')->find($id);
+
+        $userId = Auth::id();
+
+
+         $bids = Bid::where('item_id', $id)
+                   ->get();
+        
+                 // Fetch the highest bid
+        $highestBid = Bid::where('item_id', $id)->max('bid_price');  
+        
+    
+        $user = User::select('id', 'name')->find($userId);
+
+        $createdAt = $item->created_at;
+
+        $currentTime = now();
+        $remainingDays = $item->created_at->diffInDays($currentTime);
+
+
+        return view('seemore', compact('item', 'items', 'bids', 'highestBid', 'remainingDays')); 
     }
 }

@@ -16,8 +16,8 @@
             <a class="border" href="{{url('/')}}">Home</a>
             <a class="border" href="{{url('/contactus')}}">Contact-us</a>
             <a class="border" href="{{url('/about')}}">About</a>
-            <a class="border" href="login.html">Login</a>
-            <a class="border" href="register.html">Register</a>
+            <a class="border" href="{{url('/login')}}">Login</a>
+            <a class="border" href="{{url('/register')}}">Register</a>
         <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
     
             </div>
@@ -43,11 +43,11 @@
           <div class="box">
             <h2>{{ $item->name }}</h2>
             <div class="box-img" style="background-image: url('{{ asset(str_replace('public', 'storage', $item->image_path)) }}');"></div>
-            <h2>Current Price: {{ $item->minimum_price}}</h2>
-            <a class="border" href="{{url('/seemore/' . $item->id)}}">See More</a>
+            <h2 class="minprice">Current Price: {{ $item->minimum_price}}</h2>
+          
+            <a class="border seemore" href="{{url('/seemore/' . $item->id)}}">See More</a>
           </div>   
         
-
         @if($loop->iteration % 4 == 0)
         </div>
         @endif

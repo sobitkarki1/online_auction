@@ -38,6 +38,7 @@ a{
     color: antiquewhite;
     font-size: 25px;
     margin-right: 35px;
+    
 }
 h2{
     color: antiquewhite;
@@ -105,4 +106,14 @@ h2{
 .last{
     color: black;
     margin-top: 15px;
+}
+
+.minprice{
+    text-align: left;
+    font-size: 15px;
+}
+
+.seemore{
+    
+    font-size:15px;
 }
