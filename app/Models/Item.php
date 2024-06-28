@@ -26,7 +26,7 @@ class Item extends Model
     }
     public function bids()
     {
-        return $this->belongsTo(Bid::class);
+        return $this->hasMany(Bid::class);
     }
     
 }
