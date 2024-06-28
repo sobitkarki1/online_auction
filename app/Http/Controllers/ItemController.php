@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Item;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Bid;
+use App\Models\User;
 
 
 class ItemController extends Controller
@@ -57,7 +59,20 @@ class ItemController extends Controller
 
 public function show($id)
     {
-        $item = Item::with('bids.user')->find($id);
-        return view('seemore', compact('item')); 
+        $item = Item::with('bid.user')->find($id); // this is current single item
+
+        $items = Item::with('bid.user')->find($id);
+
+        $userId = Auth::id();
+
+
+         $bids = Bid::where('item_id', $id)
+                   ->get();
+        
+    
+        $user = User::select('id', 'name')->find($userId);
+
+
+        return view('seemore', compact('item', 'items', 'bids')); 
     }
 }

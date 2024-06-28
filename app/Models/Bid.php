@@ -7,8 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Bid extends Model
 {
+
+    protected $table = 'bid'; // Specify the actual table name
+    
     use HasFactory;
     protected $fillable = ['user_id', 'item_id', 'bid_price'];
+
     public function user()
     {
         return $this->hasMany(User::class);
