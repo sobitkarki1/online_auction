@@ -12,7 +12,7 @@ body{
 }
 
 h1{
-    color: antiquewhite;
+    /* color: antiquewhite; */
     display: inline-block;
     padding: 20px;
 }
@@ -87,4 +87,96 @@ h2{
 .last{
     color: rgb(76, 161, 133);
     margin-top: 15px;
+}
+ 
+/* Sandyedited */
+.contactus{
+    margin:0 10%;
+}
+
+.location{
+    justify-content: center;
+    align-items: center;
+display: flex;
+}
+i{
+    padding-top: 60px;
+    color: red;
+}
+
+#detail{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 18px;
+    text-align: center;
+}    
+.comment{
+    margin-left: 10%;
+    width: 100%;
+    border-radius: 50px solid black;
+}
+.comment .commentd input,textarea{
+width: 80%;
+height: 60px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: bold;
+color: green;
+}
+textarea{
+    width: 80%;
+    height: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
+    color: green;
+}
+textarea,::placeholder {
+    color: #000000;
+    opacity: 1;
+  }
+  textarea, input:placeholder-shown {
+    border: 1px solid #ff3c06;
+  }
+
+  .comment .commentd button{
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    border: 2px solid red;
+    text-align: center;
+    width: 180px;
+    height: 60px;
+  }
+  .comment .commentd button:hover{
+    color:white;
+    background-color: red;
+}
+.contactinfo{
+    text-align: center;
+    background-color: rgb(235, 232, 228);
+    /* padding: 5px; */
+    margin: 0 10%;
+}
+.contactinfo h5{
+    text-align: center;
+    justify-content: space-between;
+}
+.contactinfo i{
+    margin: 0 5%;
+    padding-bottom: 10px;
+    
+   }
+.form{
+    background-color: #cce;
+    text-align: center;
+    margin: 0 10%;
+    padding: 2px;
+    padding-bottom: 10px;
+}
+.form button:hover{
+    background-color: red;
+    color: aliceblue;
 }
