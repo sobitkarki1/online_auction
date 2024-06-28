@@ -9,15 +9,20 @@
 
 </head>
 <body>
-<form action="{{ route('search.index') }}" method="GET">
-    <input type="text" name="query" placeholder="Search...">
-    <button type="submit">Search</button>
-</form>
+</div>
+            <div class="inputsearch">
+            <form action="{{ route('search.index') }}" method="GET">  
+            <input id="input" type="text" name="query" placeholder="Search here" >
+            <button class="search" type="submit">Search</button>
+            </form>
+            </div>
 @if(isset($query))
 <h1>Search Results for "{{ $query }}"</h1>
 
 @if($results->isEmpty())
+<div class="noresult">
 <p>No results found.</p>
+</div>
 @else
 <ul>
 
