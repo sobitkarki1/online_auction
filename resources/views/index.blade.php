@@ -22,10 +22,10 @@
     
             </div>
             <div class="inputbutton">
-            <input id="input" type="text" placeholder="Search here" >
-            <div class="icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+            <form action="{{ route('search.index') }}" method="GET">  
+            <input id="input" type="text" name="query" placeholder="Search here" >
+            <button class="search" type="submit">Search</button>
+            </form>
             </div>
         </div>
     </header>
