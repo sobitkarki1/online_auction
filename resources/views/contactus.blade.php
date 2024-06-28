@@ -25,8 +25,8 @@
         </div>
     </header>
     <br><br>
-<h2>Contact Us</h2>
-<h4>Find us</h4>
+<!-- <h2>Contact Us</h2> -->
+<h4>Find us</h4> <br>
         <section class="location">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.876930320698!2d83.97457957538761!3d28.211051475897523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595ab009e696f%3A0x8657229f67dc8afb!2z4KSq4KWL4KSW4KSw4KS-IOCkh-CkqOCljeCknOCkv-CkqOCkv-Ckr-CksOCkv-CkmSDgpJXgpLLgpYfgpJw!5e0!3m2!1sne!2snp!4v1719135148166!5m2!1sne!2snp"
@@ -61,10 +61,10 @@
         <section class="comment">
             <div class="commentd">
                 <form action="form-handler.php" method="post">
-                    <dir><input type="text" name="name" placeholder="Enter your name" required></dir>
-                    <dir><input type="email" name="email" placeholder="Enter  email address" required></dir>
-                    <dir><textarea rows="8" name="message" placeholder="Message" required></textarea></dir>
-                    <dir><button type="submit" class="red-button">Send Message</button></dir>
+                    <br><dir><input type="text" name="name" placeholder="Enter your name" required></dir>
+                    <br><dir><input type="email" name="email" placeholder="Enter  email address" required></dir>
+                    <br><dir><textarea rows="8" name="message" placeholder="Message" required></textarea></dir>
+                    <br><dir><button type="submit" class="red-button">Send Message</button></dir><br>
                 </form>
             </div>
 
@@ -102,13 +102,15 @@
     </section>
 
     <br> <br>
-    <section class="footer">
-        <div class="content">
-            <p> This website is made by Sandesh Sapkota, Namrata Adhakari, Rohit Rey Dununwar, Sobit Karki as study
-                purpose for Project 2<sup>nd</sup></p>
-            <p>Copyright @ 2024cc</p>
+    <footer>
+        <div class="footer">
+            <a class="border last" href="#">About</a>
+            <a class="border last" href="#">Product</a>
+            <a class="border last" href="contactus/contact.html">Contact-Us</a>
+            <a class="border last" href="#">Privacy-Policy</a>
+            <a class="border last" href="#">Terms Of service</a>
         </div>
-    </section>
+    </footer>
 
 
 </body>
