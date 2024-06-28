@@ -62,8 +62,8 @@
             <div class="commentd">
                 <form action="form-handler.php" method="post">
                     <br><dir><input type="text" name="name" placeholder="Enter your name" required></dir>
-                    <br><dir><input type="email" name="email" placeholder="Enter  email address" required></dir>
-                    <br><dir><textarea rows="8" name="message" placeholder="Message" required></textarea></dir>
+                    <br><dir><input type="email" name="email" placeholder="Enter email address" required></dir>
+                    <br><dir><textarea class="message" rows="8" name="message" placeholder="Message" required></textarea></dir>
                     <br><dir><button type="submit" class="red-button">Send Message</button></dir><br>
                 </form>
             </div>
@@ -80,10 +80,6 @@
             <a href="https://x.com/"><i class="fa fa-twitter"></i></a>
         </div>
 <br>
-        <section class="form">
-            <h4>To add items Click Here</h4>
-            <a href="form.html"><button type="submit" class="req">Add Item</button></a>
-        </section>
 
     </section>
     <script>

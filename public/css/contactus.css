@@ -127,6 +127,7 @@ height: 60px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-style: bold;
 color: green;
+border-radius: 20px;
 }
 textarea{
     width: 80%;
@@ -152,6 +153,7 @@ textarea,::placeholder {
     width: 180px;
     height: 60px;
     color: whitesmoke;
+    border-radius: 20px;
   }
   .comment .commentd button:hover{
     color:white;
@@ -182,4 +184,9 @@ textarea,::placeholder {
 .form button:hover{
     background-color: red;
     color: aliceblue;
+}
+
+.message{
+    padding-left: 7px;
+
 }
