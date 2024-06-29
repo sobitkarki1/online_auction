@@ -61,8 +61,8 @@
     </div>
     <div class="">
     <div class="calss">
-    <h2 class="alert-text">Bids</h2> 
-    <br>
+    <h2 class="alert-text">Bids</h2>
+  
     
     @if($bids)
     @foreach($bids as $bid)

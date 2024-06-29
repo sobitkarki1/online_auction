@@ -6,6 +6,8 @@
     <title>Contact-Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/contactus.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/newindex.css') }}">
+
 
 </head>
 <body>
@@ -50,8 +52,7 @@
                     </span>
                 </div>
                 <div>
-                    <i class="fa fa-envelope-o"></i>
-                    <span>
+                <i class="fa-solid fa-envelope"></i>                    <span>
                         <h5>sandeshsapkota52@gmail.com</h5>
                     </span>
                 </div>
@@ -78,10 +79,10 @@
             <p>You can find us on our social media or you can mail us on our given Email below.
                 <br><u>sandeshsapkota52@gmail.com</u>
             </p>
-            <a href="https://www.facebook.com/Sandeshspk52"><i class="fa fa-facebook"></i></a>
-            <a href="instagram.com"><i class="fa fa-instagram"></i></a>
-            <a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp"></i></a>
-            <a href="https://x.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/Sandeshspk52"><i class="fab fa-facebook"></i></a>
+            <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
         </div>
 <br>
 

@@ -106,3 +106,6 @@ button{
     text-align: center;
    word-spacing: 30px;
 }   
+button:hover{
+    cursor: pointer;
+}
