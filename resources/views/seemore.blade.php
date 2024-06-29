@@ -60,11 +60,14 @@
         </div>
     </div>
     <div class="">
-    <h2 class="alert-text">Bids</h2>
+    <div class="calss">
+    <h2 class="alert-text">Bids</h2> 
+    <br>
     
     @if($bids)
     @foreach($bids as $bid)
     
+   
     <ul>
         <li class="alert-text"> User ID:{{ $bid->user_id }} , Bid: Rs.{{ $bid->bid_price }}</li>
     </ul>
@@ -78,6 +81,6 @@
       <p class="alert-text"> {{ session('success') }} </p>
     </div>
 @endif
-
+</div>
 </body>
 </html>

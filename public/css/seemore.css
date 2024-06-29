@@ -100,3 +100,9 @@ button{
     text-align: justify;
     background-color: rgb(8, 8, 34);
 }
+.calss{
+    margin-left: 70%;
+    background-color: rgb(12, 2, 40);
+    text-align: center;
+   word-spacing: 30px;
+}   
