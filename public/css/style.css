@@ -4,13 +4,14 @@
 }
 
 form{
-    background: burlywood;
+    background: rgba(220, 228, 242,0.4);
     padding: 20px;
     border-radius: 5px;
 }
 
 .form-group {
     margin-bottom: 20px;
+    color:antiquewhite;
 }
 
 label {
@@ -37,19 +38,29 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background: #043d7a;
 }
 .note {
     text-align: center;
+    color:antiquewhite;
 
 }
+
+
 body {
-    background-color: gray;
+    background-color: rgb(1, 19, 43);
     background-image: url('');
 }
 h2{
-    color:black;
+    color:antiquewhite;
     text-align: center;
     font-size: 40px;
     font-family: 'Helvetica', sans-serif;
+}
+p{
+    color:antiquewhite;  
+}
+.logintext{
+    text-align: right;
+    color: rgb(2, 38, 86); 
 }
