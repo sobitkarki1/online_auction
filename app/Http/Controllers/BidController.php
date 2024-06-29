@@ -41,6 +41,10 @@ class BidController extends Controller
         $bid->user_id = auth()->id();
         $bid->item_id = $item->id;
         $bid->bid_price = $request->input('bid_price');
+        if ($bid->bid_price < $item->minimum_price) 
+        {
+            return redirect()->back()->with('fail', 'Invalid bid price');
+        }
 
         // Save the bid
         $bid->save();

@@ -31,6 +31,8 @@
             <main>
                 {{ $slot }}
             </main>
+            @include('search')
+
         </div>
     </body>
 </html>

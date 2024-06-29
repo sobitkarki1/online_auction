@@ -22,10 +22,10 @@
     
             </div>
             <div class="inputbutton">
-            <input id="input" type="text" placeholder="Search here" >
-            <div class="icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+            <form action="{{ route('search.index') }}" method="GET">  
+            <input id="input" type="text" name="query" placeholder="Search here" >
+            <button class="search" type="submit">Search</button>
+            </form>
             </div>
         </div>
     </header>
@@ -43,11 +43,11 @@
           <div class="box">
             <h2>{{ $item->name }}</h2>
             <div class="box-img" style="background-image: url('{{ asset(str_replace('public', 'storage', $item->image_path)) }}');"></div>
-            <h2>Current Price: {{ $item->minimum_price}}</h2>
-            <a class="border" href="{{url('/seemore/' . $item->id)}}">See More</a>
+            <h2 class="minprice">Current Price: {{ $item->minimum_price}}</h2>
+          
+            <a class="border seemore" href="{{url('/seemore/' . $item->id)}}">See More</a>
           </div>   
         
-
         @if($loop->iteration % 4 == 0)
         </div>
         @endif
@@ -58,6 +58,10 @@
         @endforeach
 
         </div>
+    <br>
+    <br>
+    <br>
+    <br>
     
     <footer>
         <div class="footer">
