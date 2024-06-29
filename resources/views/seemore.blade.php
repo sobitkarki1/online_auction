@@ -15,7 +15,7 @@
         
             <h1>{{$item->name}}</h1>
 
-            <p class="description"> Description: {{ $item->description}}</p>
+            <p class="description" > Description: {{ $item->description}}</p>
             
             <label>Minimum Price</label>
             <div class="smallbox">

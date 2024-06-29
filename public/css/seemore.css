@@ -96,4 +96,7 @@ button{
     font-size: 15px;
     margin-top:10px;
     margin-bottom:10px;
+    width:fit-content;
+    text-align: justify;
+    background-color: rgb(8, 8, 34);
 }
