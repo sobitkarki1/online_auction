@@ -9,6 +9,7 @@ use App\Http\Controllers\SearchController;
 use App\Http\Controllers\FeedbackController;
 
 Route::get('/', [ItemController::class, 'index'])->middleware('auth')->name('index');
+Route::get('/', [ItemController::class, 'product'])->middleware('auth')->name('product');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
