@@ -10,7 +10,8 @@
 </head>
 <body>
 </div>
-            <div class="inputsearch">
+
+            <div class="inputsearch content">
             <form action="{{ route('search.index') }}" method="GET">  
             <input id="input" type="text" name="query" placeholder="Search here" >
             <button class="search" type="submit">Search</button>
@@ -27,8 +28,9 @@
 <ul>
 
     @foreach($results as $result)
-   
-    <div class="content">
+    @if($loop->iteration % 4 == 1)
+        <di class="content">
+        @endif
         
 
         <div class="box">
@@ -40,7 +42,9 @@
 
             <a class="border seemore" href="{{url('/seemore/' . $result->id)}}">See More</a>
         </div>
-    </div>
+        @if($loop->iteration % 4 == 0)
+        </div>
+        @endif
     @endforeach
 </ul>
 
