@@ -21,12 +21,14 @@
             <a class="border" href="login">Login</a>
             <a class="border" href="product">Product</a>
         <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
-               <h4>About Us</h4>
+               
  
             </div>
         </div>
     </header>
-    <br><br>
+    <br>
+    <h4>About Us</h4>
+    <br>
 <div class="para1">
 <p>
     Welcome to Online Auction, your premier destination for auctions. Whether you're a seasoned collector, a hobbyist seeking unique finds, or simply looking to declutter and sell, we provide a seamless platform to buy and sell a wide range of items from the comfort of your home.
