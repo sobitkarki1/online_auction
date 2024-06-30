@@ -12,6 +12,11 @@
                     {{ __("You're logged in!") }}
                 </div>
             </div>
+            <div class="mt-4">
+                <a href="{{ url('/') }}" class="text-blue-500 hover:text-blue-700">
+                    {{ __('Go to Homepage') }}
+                </a>
+            </div>
         </div>
     </div>
 </x-app-layout>
