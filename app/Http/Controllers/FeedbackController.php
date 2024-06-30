@@ -23,11 +23,14 @@ class FeedbackController extends Controller
 
         Feedback::create($request->all());
 
-        return redirect()->route('feedback.create')->with('success', 'Thank you for your feedback!');
+        // Redirect to the show-success page with a success message
+        return redirect()->route('feedbacks.show-success')->with('success', 'Thank you for your feedback!');
+        
+        // Admins can look at feedback by directly going to http://127.0.0.1:8000/feedback
     } 
     public function index()
     {
-        
+        $feedbacks = Feedback::all();
         return view('feedbacks.index', compact('feedbacks'));
     }
 }
