@@ -62,10 +62,10 @@
     <footer>
     <div class="footer"> <br><br>
             <a class="border last" href="#">About</a>
-            <a class="border last" href="#">Product</a>
-            <a class="border last" href="contactus/contact.html">Contact-Us</a>
-            <a class="border last" href="#">Privacy-Policy</a>
-            <a class="border last" href="#">Terms Of service</a>
+            <a class="border last" href="{{url('/product')}}">Product</a>
+            <a class="border last" href="{{url('/contactus')}}">Contact-Us</a>
+            <a class="border last" href="{{url('/privacy-policy')}}">Privacy-Policy</a>
+            <a class="border last" href="{{url('/terms')}}">Terms Of service</a>
         </div>
     </footer>
 </body>

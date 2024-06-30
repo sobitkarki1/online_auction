@@ -50,13 +50,12 @@ In this website, our mission is to connect buyers and sellers in a secure and us
 </div>
 
 <footer>
-<div class="footer"> <br><br>
+    <div class="footer"> <br><br>
             <a class="border last" href="#">About</a>
-            <a class="border last" href="#">Product</a>
-            <a class="border last" href="contactus/contact.html">Contact-Us</a>
-            <a class="border last" href="#">Privacy-Policy</a>
-            <a class="border last" href="#">Terms Of service</a>
-        </div>
+            <a class="border last" href="{{url('/product')}}">Product</a>
+            <a class="border last" href="{{url('/contactus')}}">Contact-Us</a>
+            <a class="border last" href="{{url('/privacy-policy')}}">Privacy-Policy</a>
+            <a class="border last" href="{{url('/terms')}}">Terms Of service</a>
         </div>
     </footer>
 
