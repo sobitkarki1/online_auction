@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="{{ asset('css/newindex.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/product.css') }}">
 
 </head>
 <body>
@@ -26,18 +26,12 @@
         <!-- User is not authenticated, show login link -->
         <a class="border" href="{{ route('login') }}">Login</a>
     @endauth
-
             <a class="border" href="{{url('/product')}}">Product</a>
             <!-- <a class="border" href="{{url('/register')}}">Register</a> -->
         <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
     
             </div>
-            <div class="inputbutton">
-            <form action="{{ route('search.index') }}" method="GET">  
-            <input id="input" type="text" name="query" placeholder="Search here" >
-            <button class="search" type="submit">Search</button>
-            </form>
-            </div>
+            
         </div>
     </header>
 
