@@ -6,6 +6,8 @@
     <title>Contact-Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/contactus.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/newindex.css') }}">
+
 
 </head>
 <body>
@@ -14,10 +16,10 @@
             <h1>Online Auction</h1>
             <div class="ray">
             <a class="border" href="{{url('/')}}">Home</a>
-            <a class="border" href="contactus/contact.html">Contact-us</a>
+            <a class="border" href="/contactus">Contact-us</a>
             <a class="border" href="{{url('/about')}}">About</a>
-            <a class="border" href="login.html">Login</a>
-            <a class="border" href="register.html">Register</a>
+            <a class="border" href="login">Login</a>
+            <a class="border" href="register">Register</a>
         <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
     
             </div>
@@ -50,8 +52,7 @@
                     </span>
                 </div>
                 <div>
-                    <i class="fa fa-envelope-o"></i>
-                    <span>
+                <i class="fa-solid fa-envelope"></i>                    <span>
                         <h5>sandeshsapkota52@gmail.com</h5>
                     </span>
                 </div>
@@ -78,10 +79,10 @@
             <p>You can find us on our social media or you can mail us on our given Email below.
                 <br><u>sandeshsapkota52@gmail.com</u>
             </p>
-            <a href="https://www.facebook.com/Sandeshspk52"><i class="fa fa-facebook"></i></a>
-            <a href="instagram.com"><i class="fa fa-instagram"></i></a>
-            <a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp"></i></a>
-            <a href="https://x.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/Sandeshspk52"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
         </div>
 <br>
 
@@ -104,11 +105,11 @@
     <br> <br>
     <footer>
         <div class="footer">
-            <a class="border last" href="#">About</a>
-            <a class="border last" href="#">Product</a>
-            <a class="border last" href="contactus/contact.html">Contact-Us</a>
-            <a class="border last" href="#">Privacy-Policy</a>
-            <a class="border last" href="#">Terms Of service</a>
+            <a class="border last" href="#">About</a><br> <br>
+            <a class="border last" href="#">Product</a><br> <br>
+            <a class="border last" href="contactus/contact.html">Contact-Us</a><br> <br>
+            <a class="border last" href="#">Privacy-Policy</a><br> <br>
+            <a class="border last" href="#">Terms Of service</a><br> <br>
         </div>
     </footer>
 

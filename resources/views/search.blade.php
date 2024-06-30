@@ -10,14 +10,15 @@
 </head>
 <body>
 </div>
-            <div class="inputsearch">
+
+            <div class="inputsearch content">
             <form action="{{ route('search.index') }}" method="GET">  
             <input id="input" type="text" name="query" placeholder="Search here" >
             <button class="search" type="submit">Search</button>
             </form>
             </div>
 @if(isset($query))
-<h1>Search Results for "{{ $query }}"</h1>
+<h3>Search Results for "{{ $query }}"</h3>
 
 @if($results->isEmpty())
 <div class="noresult">

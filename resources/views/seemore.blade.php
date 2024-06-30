@@ -15,7 +15,7 @@
         
             <h1>{{$item->name}}</h1>
 
-            <p class="description"> Description: {{ $item->description}}</p>
+            <p class="description" > Description: {{ $item->description}}</p>
             
             <label>Minimum Price</label>
             <div class="smallbox">
@@ -60,11 +60,14 @@
         </div>
     </div>
     <div class="">
+    <div class="calss">
     <h2 class="alert-text">Bids</h2>
+  
     
     @if($bids)
     @foreach($bids as $bid)
     
+   
     <ul>
         <li class="alert-text"> User ID:{{ $bid->user_id }} , Bid: Rs.{{ $bid->bid_price }}</li>
     </ul>
@@ -78,6 +81,6 @@
       <p class="alert-text"> {{ session('success') }} </p>
     </div>
 @endif
-
+</div>
 </body>
 </html>
