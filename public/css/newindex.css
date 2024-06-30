@@ -27,13 +27,18 @@ h1{
     margin-left: 350px;
     display: inline-block;
 }
+a:hover{
+    cursor: pointer;
+    color: rgb(108, 4, 4);
+    background-color: wheat;
+    
+    
+}
 .border{
     border: 2px solid transparent;
 }
 
-.border:hover{
-    border: 2px solid antiquewhite;
-}
+
 a{
     text-decoration: none;
     color: antiquewhite;
@@ -58,6 +63,14 @@ h2{
     text-align: left;
     background-color: rgb(183, 226, 212);
     border-radius: 40px;
+
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(150, 248, 4);
+    color: red;
 }
 .icon{
     background-color: rgb(76, 161, 133);
@@ -98,6 +111,12 @@ h2{
     text-align: center;
     border: 2px solid antiquewhite;
     border-radius: 15px;
+    display: list-item;
+    /* display:flex;
+    flex-direction:column; */
+}
+.footer:hover{
+    color: red;
     
 }
 .last{
@@ -131,6 +150,10 @@ h2{
 }
 
 .noresult{
+    color:antiquewhite;
+    margin-left: 9px;
+}
+h3{
     color:antiquewhite;
     margin-left: 9px;
 }

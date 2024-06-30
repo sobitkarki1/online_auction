@@ -19,12 +19,12 @@
         @csrf
         <div class="form-group">
             <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required>
+            <input type="text" placeholder="Product name" id="name" name="name" required>
         </div>
         
         <div class="form-group">
             <label for="description">Description:</label><br>
-            <textarea id="description" name="description" required></textarea>
+            <textarea  id="description" placeholder="Please mention the condition also" name="description" required></textarea>
         </div>
 
         <div class="form-group">
