@@ -11,7 +11,7 @@ use App\Http\Controllers\FeedbackController;
 Route::get('/', [ItemController::class, 'index'])->middleware('auth')->name('index');
 
 Route::get('/dashboard', function () {
-    return view('index');
+    return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
