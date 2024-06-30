@@ -38,7 +38,9 @@ Route::get('/about', function () {
 });
 
 Route::get('/seemore/{id}', [ItemController::class, 'show'])->middleware('auth');
-
+Route::get('/product', function(){
+    return view('product');
+});
 
 
 Route::post('/seemore/{id}', [BidController::class, 'store'])->middleware('auth')->name('bid.store');

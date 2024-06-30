@@ -21,9 +21,10 @@
             <a class="border" href="login">Login</a>
             <a class="border" href="register">Register</a>
         <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
-               <h4>About Us</h4>
- 
+              
             </div>
+<div class="about"><h3>About Us</h3></div>
+
         </div>
     </header>
     <br><br>
@@ -51,12 +52,13 @@ At [Website Name], our mission is to connect buyers and sellers in a secure and 
 
 <footer>
 <div class="footer">
-            <a class="border last" href="#">About</a><br> <br>
+
+            <a class="border last" href="{{url('/about')}}">About</a><br> <br>
             <a class="border last" href="#">Product</a><br> <br>
-            <a class="border last" href="contactus/contact.html">Contact-Us</a><br> <br>
+            <a class="border last" href="{{url('/contactus')}}">Contact-Us</a><br> <br>
             <a class="border last" href="#">Privacy-Policy</a><br> <br>
             <a class="border last" href="#">Terms Of service</a><br> <br>
-        </div>
+    
         </div>
     </footer>
 

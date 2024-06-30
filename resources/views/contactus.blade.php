@@ -104,10 +104,10 @@
 
     <br> <br>
     <footer>
-        <div class="footer">
-            <a class="border last" href="#">About</a><br> <br>
+    <div class="footer">
+            <a class="border last" href="{{url('/about')}}">About</a><br> <br>
             <a class="border last" href="#">Product</a><br> <br>
-            <a class="border last" href="contactus/contact.html">Contact-Us</a><br> <br>
+            <a class="border last" href="{{url('/contactus')}}">Contact-Us</a><br> <br>
             <a class="border last" href="#">Privacy-Policy</a><br> <br>
             <a class="border last" href="#">Terms Of service</a><br> <br>
         </div>
