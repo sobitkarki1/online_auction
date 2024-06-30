@@ -28,7 +28,9 @@
 
     @foreach($results as $result)
    
-    <div class="content">
+    @if($loop->iteration % 4 == 1)
+        <div class="content">
+        @endif
         
 
         <div class="box">
@@ -40,7 +42,10 @@
 
             <a class="border seemore" href="{{url('/seemore/' . $result->id)}}">See More</a>
         </div>
-    </div>
+        
+        @if($loop->iteration % 4 == 0)
+        </div>
+        @endif
     @endforeach
 </ul>
 
