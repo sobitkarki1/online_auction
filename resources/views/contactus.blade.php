@@ -53,7 +53,7 @@
                 </div>
                 <div>
                 <i class="fa-solid fa-envelope"></i>                    <span>
-                        <h5>sandeshsapkota52@gmail.com</h5>
+                        <h5>online.auction577@gmail.com</h5>
                     </span>
                 </div>
             </div>
@@ -77,7 +77,7 @@
         <div class="contactinfo">
             <H5>Contact us </H5>
             <p>You can find us on our social media or you can mail us on our given Email below.
-                <br><u>sandeshsapkota52@gmail.com</u>
+                <br><u>online.auction577@gmail.com</u>
             </p>
             <a href="https://www.facebook.com/Sandeshspk52"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
