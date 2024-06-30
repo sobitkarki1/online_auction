@@ -14,18 +14,19 @@
         <div class="rohit">
         <h1>Online Auction</h1>
             <div class="ray">
+          
             <a class="border" href="{{url('/')}}">Home</a>
-            <a class="border" href="{{url('/contactus')}}">Contact-us</a>
+            <a class="border" href="/contactus">Contact-us</a>
             <a class="border" href="{{url('/about')}}">About</a>
-            <a class="border" href="login.html">Login</a>
-            <a class="border" href="register.html">Register</a>
+            <a class="border" href="login">Login</a>
+            <a class="border" href="register">Register</a>
         <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
-    
+               <h4>About Us</h4>
+ 
             </div>
         </div>
     </header>
     <br><br>
-<h4>About Us</h4>
 <div class="para1">
 <p>
     Welcome to [Website Name], your premier destination for online auctions. Whether you're a seasoned collector, a hobbyist seeking unique finds, or simply looking to declutter and sell, we provide a seamless platform to buy and sell a wide range of items from the comfort of your home.
@@ -49,12 +50,13 @@ At [Website Name], our mission is to connect buyers and sellers in a secure and 
 </div>
 
 <footer>
-        <div class="footer">
-            <a class="border last" href="#">About</a>
-            <a class="border last" href="#">Product</a>
-            <a class="border last" href="contactus/contact.html">Contact-Us</a>
-            <a class="border last" href="#">Privacy-Policy</a>
-            <a class="border last" href="#">Terms Of service</a>
+<div class="footer">
+            <a class="border last" href="#">About</a><br> <br>
+            <a class="border last" href="#">Product</a><br> <br>
+            <a class="border last" href="contactus/contact.html">Contact-Us</a><br> <br>
+            <a class="border last" href="#">Privacy-Policy</a><br> <br>
+            <a class="border last" href="#">Terms Of service</a><br> <br>
+        </div>
         </div>
     </footer>
 

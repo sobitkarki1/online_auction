@@ -116,8 +116,9 @@ button:hover{
     text-align: center;
     border: 2px solid antiquewhite;
     border-radius: 15px;
-    display:flex;
-    flex-direction:column;
+    display: list-item;
+    /* display:flex;
+    flex-direction:column; */
 }
 .footer:hover{
     color: red;

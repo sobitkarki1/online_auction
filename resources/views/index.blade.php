@@ -17,7 +17,7 @@
             <a class="border" href="{{url('/contactus')}}">Contact-us</a>
             <a class="border" href="{{url('/about')}}">About</a>
             <a class="border" href="{{url('/login')}}">Login</a>
-            <a class="border" href="{{url('/register')}}">Register</a>
+            <!-- <a class="border" href="{{url('/register')}}">Register</a> -->
         <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
     
             </div>
@@ -64,12 +64,12 @@
     <br>
     
     <footer>
-        <div class="footer">
-            <a class="border last" href="#">About</a>
-            <a class="border last" href="#">Product</a>
-            <a class="border last" href="contactus/contact.html">Contact-Us</a>
-            <a class="border last" href="#">Privacy-Policy</a>
-            <a class="border last" href="#">Terms Of service</a>
+    <div class="footer">
+            <a class="border last" href="#">About</a><br> <br>
+            <a class="border last" href="#">Product</a><br> <br>
+            <a class="border last" href="contactus/contact.html">Contact-Us</a><br> <br>
+            <a class="border last" href="#">Privacy-Policy</a><br> <br>
+            <a class="border last" href="#">Terms Of service</a><br> <br>
         </div>
     </footer>
 </body>
