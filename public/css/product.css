@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    border: border-box;
+}
+body{
+    background-color: rgb(1, 21, 46);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.rohit{
+    /* background-image: url("../images/logo.jpg"); */
+    /* height: 100vh; */
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    color: antiquewhite;
+    display: inline-block;
+    padding: 20px;
+}
+.ray{
+    margin-left: 350px;
+    display: inline-block;
+}
+a:hover{
+    cursor: pointer;
+    color: rgb(108, 4, 4);
+    background-color: wheat;
+    
+    
+}
+.border{
+    border: 2px solid transparent;
+}
+
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 25px;
+    margin-right: 35px;
+    
+}
+h2{
+    color: antiquewhite;
+    text-align: center;
+    padding: 5px;
+}
+.inputbutton{
+    margin-left: 350px;
+    margin-top: 220px;
+    display: flex;
+}
+#input{
+    height: 50px;
+    width: 600px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-size: 20px;
+    text-align: left;
+    padding-left:9px;
+    background-color: rgb(183, 226, 212);
+    border-radius: 40px;
+
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(150, 248, 4);
+    color: red;
+}
+.icon{
+    background-color: rgb(76, 161, 133);
+    width: 45px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-radius: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.box{
+    border: 5px solid antiquewhite;
+    height: 350px;
+    width: 300px;
+    background-color: rgba(0, 0, 0,0.1);
+    border-radius: 15px;
+}
+.box-img{
+    height: 240px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.add{
+    margin-top: 30px;
+    margin-left: 600px;
+    border-radius: 5px;
+}
+.footer{
+   border: 5px solid whitesmoke;
+   text-align: center;
+   padding: 20px;
+   margin-top: 20%;
+   
+
+}
+.footer:hover{
+    color: red;
+    
+}
+.last{
+    color: antiquewhite;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.minprice{
+    text-align: left;
+    font-size: 15px;
+}
+
+.seemore{
+    
+    font-size:15px;
+}
+
+.search{
+    height: 50px;
+    width: 110px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-size: 20px;
+    text-align: center;
+    padding-left:5px;
+    background-color: rgb(183, 226, 212);
+    border-radius: 40px;
+}
+
+.inputsearch{
+    padding-left:20%;
+    padding-top:30px;
+}
+
+.noresult{
+    color:antiquewhite;
+    margin-left: 9px;
+}
+h3{
+    color:antiquewhite;
+    margin-left: 9px;
+}

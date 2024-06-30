@@ -6,7 +6,6 @@
     <title>Products</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/product.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/newindex.css') }}">
 </head>
 <body>
 <header>
@@ -50,11 +49,11 @@
 
 <footer>
     <div class="footer">
-            <a class="border last" href="{{url('/about')}}">About</a><br> <br>
-            <a class="border last" href="{{url('/product')}}">Product</a><br> <br>
-            <a class="border last" href="{{url('/contactus')}}">Contact-Us</a><br> <br>
-            <a class="border last" href="#">Privacy-Policy</a><br> <br>
-            <a class="border last" href="#">Terms Of service</a><br> <br>
+            <a class="border last" href="{{url('/about')}}">About</a>
+            <a class="border last" href="{{url('/product')}}">Product</a>
+            <a class="border last" href="{{url('/contactus')}}">Contact-Us</a>
+            <a class="border last" href="#">Privacy-Policy</a>
+            <a class="border last" href="#">Terms Of service</a>
         </div>
     </footer>
 </body>
