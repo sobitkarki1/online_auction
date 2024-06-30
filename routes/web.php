@@ -49,9 +49,20 @@ Route::get('/search/results', 'SearchController@results')->name('search.results'
 
 Route::delete('/items/{id}', [ItemController::class, 'destroy'])->name('items.destroy');
 
-Route::get('/feedback', [FeedbackController::class, 'index'])->name('feedback.index');
+
+
+// Feedback routes
 Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
+
+
 Route::get('/feedbacks', [FeedbackController::class, 'index'])->name('feedbacks.index');
+
+Route::get('/feedbacks/show-success', function () {
+    return view('feedbacks.show-success');
+})->name('feedbacks.show-success');
+
+
+
 
 
 
