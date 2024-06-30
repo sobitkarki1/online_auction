@@ -106,7 +106,7 @@
     <footer>
     <footer>
     <div class="footer"> <br><br>
-            <a class="border last" href="#">About</a>
+            <a class="border last" href="{{url('/about')}}">About</a>
             <a class="border last" href="{{url('/product')}}">Product</a>
             <a class="border last" href="{{url('/contactus')}}">Contact-Us</a>
             <a class="border last" href="{{url('/privacy-policy')}}">Privacy-Policy</a>
