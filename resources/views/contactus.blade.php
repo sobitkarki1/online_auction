@@ -104,12 +104,12 @@
 
     <br> <br>
     <footer>
-        <div class="footer">
-            <a class="border last" href="#">About</a><br> <br>
-            <a class="border last" href="#">Product</a><br> <br>
-            <a class="border last" href="contactus/contact.html">Contact-Us</a><br> <br>
-            <a class="border last" href="#">Privacy-Policy</a><br> <br>
-            <a class="border last" href="#">Terms Of service</a><br> <br>
+        <div class="footer"><br><br>
+            <a class="border last" href="#">About</a>
+            <a class="border last" href="#">Product</a>
+            <a class="border last" href="contactus/contact.html">Contact-Us</a>
+            <a class="border last" href="#">Privacy-Policy</a>
+            <a class="border last" href="#">Terms Of service</a>
         </div>
     </footer>
 
