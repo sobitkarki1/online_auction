@@ -11,7 +11,7 @@ use App\Http\Controllers\FeedbackController;
 Route::get('/', [ItemController::class, 'index'])->middleware('auth')->name('index');
 
 Route::get('/dashboard', function () {
-    return view('index');
+    return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
@@ -32,6 +32,8 @@ Route::get('/items', [ItemController::class, 'simple_list'])->name('items.simple
 Route::get('/contactus', function () {
     return view('contactus');
 });
+
+Route::get('/product', [ItemController::class, 'product'])->middleware('auth')->name('product');
 
 Route::get('/about', function () {
     return view('about');

@@ -53,6 +53,12 @@ class ItemController extends Controller
         return view('index', compact('items'));
     }
 
+    public function product()
+    {
+        $items = Item::with('user')->get();
+        return view('product', compact('items'));
+    }
+
     public function simple_list()
     {
         $items = Item::with('user')->get();
