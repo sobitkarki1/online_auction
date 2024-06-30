@@ -211,8 +211,8 @@ class ComposerStaticInitd2e112db0408005c7003ce2dd332e05f
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Whoops\\' => 
         array (
@@ -352,13 +352,13 @@ class ComposerStaticInitd2e112db0408005c7003ce2dd332e05f
         ),
         'Spatie\\LaravelIgnition\\' => 
         array (
-            0 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/laravel-ignition',
-            1 => __DIR__ . '/..' . '/spatie/laravel-ignition/src',
+            0 => __DIR__ . '/..' . '/spatie/laravel-ignition/src',
+            1 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/laravel-ignition',
         ),
         'Spatie\\Ignition\\' => 
         array (
-            0 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/ignition',
-            1 => __DIR__ . '/..' . '/spatie/ignition/src',
+            0 => __DIR__ . '/..' . '/spatie/ignition/src',
+            1 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/ignition',
         ),
         'Spatie\\FlareClient\\' => 
         array (
@@ -394,8 +394,8 @@ class ComposerStaticInitd2e112db0408005c7003ce2dd332e05f
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -620,11 +620,14 @@ class ComposerStaticInitd2e112db0408005c7003ce2dd332e05f
         'App\\Http\\Controllers\\Auth\\VerifyEmailController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerifyEmailController.php',
         'App\\Http\\Controllers\\BidController' => __DIR__ . '/../..' . '/app/Http/Controllers/BidController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\FeedbackController' => __DIR__ . '/../..' . '/app/Http/Controllers/FeedbackController.php',
         'App\\Http\\Controllers\\ItemController' => __DIR__ . '/../..' . '/app/Http/Controllers/ItemController.php',
         'App\\Http\\Controllers\\ProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProfileController.php',
+        'App\\Http\\Controllers\\SearchController' => __DIR__ . '/../..' . '/app/Http/Controllers/SearchController.php',
         'App\\Http\\Requests\\Auth\\LoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Auth/LoginRequest.php',
         'App\\Http\\Requests\\ProfileUpdateRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ProfileUpdateRequest.php',
         'App\\Models\\Bid' => __DIR__ . '/../..' . '/app/Models/Bid.php',
+        'App\\Models\\Feedback' => __DIR__ . '/../..' . '/app/Models/Feedback.php',
         'App\\Models\\Item' => __DIR__ . '/../..' . '/app/Models/Item.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
@@ -5879,6 +5882,7 @@ class ComposerStaticInitd2e112db0408005c7003ce2dd332e05f
         'Spatie\\ErrorSolutions\\SolutionProviders\\Laravel\\ViewNotFoundSolutionProvider' => __DIR__ . '/..' . '/spatie/error-solutions/src/SolutionProviders/Laravel/ViewNotFoundSolutionProvider.php',
         'Spatie\\ErrorSolutions\\SolutionProviders\\MergeConflictSolutionProvider' => __DIR__ . '/..' . '/spatie/error-solutions/src/SolutionProviders/MergeConflictSolutionProvider.php',
         'Spatie\\ErrorSolutions\\SolutionProviders\\UndefinedPropertySolutionProvider' => __DIR__ . '/..' . '/spatie/error-solutions/src/SolutionProviders/UndefinedPropertySolutionProvider.php',
+        'Spatie\\ErrorSolutions\\Solutions\\Concerns\\IsProvidedByFlare' => __DIR__ . '/..' . '/spatie/error-solutions/src/Solutions/Concerns/IsProvidedByFlare.php',
         'Spatie\\ErrorSolutions\\Solutions\\Laravel\\GenerateAppKeySolution' => __DIR__ . '/..' . '/spatie/error-solutions/src/Solutions/Laravel/GenerateAppKeySolution.php',
         'Spatie\\ErrorSolutions\\Solutions\\Laravel\\LivewireDiscoverSolution' => __DIR__ . '/..' . '/spatie/error-solutions/src/Solutions/Laravel/LivewireDiscoverSolution.php',
         'Spatie\\ErrorSolutions\\Solutions\\Laravel\\MakeViewVariableOptionalSolution' => __DIR__ . '/..' . '/spatie/error-solutions/src/Solutions/Laravel/MakeViewVariableOptionalSolution.php',
