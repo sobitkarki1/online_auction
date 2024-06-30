@@ -16,19 +16,19 @@
             <h1>Online Auction</h1>
             <div class="ray">
             <a class="border" href="{{url('/')}}">Home</a>
-            <a class="border" href="/contactus">Contact-us</a>
+            <a class="border" href="{{url('/contactus')}}">Contact-us</a>
             <a class="border" href="{{url('/about')}}">About</a>
-            <a class="border" href="login">Login</a>
-            <a class="border" href="register">Register</a>
+            <a class="border" href="{{url('/login')}}">Login</a>
+            <a class="border" href="{{url('/product')}}">Products</a>
         <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
-    
             </div>
-           
+            <h3>Find us</h3>
         </div>
+        
     </header>
     <br><br>
 <!-- <h2>Contact Us</h2> -->
-<h4>Find us</h4> <br>
+ <br>
         <section class="location">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.876930320698!2d83.97457957538761!3d28.211051475897523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595ab009e696f%3A0x8657229f67dc8afb!2z4KSq4KWL4KSW4KSw4KS-IOCkh-CkqOCljeCknOCkv-CkqOCkv-Ckr-CksOCkv-CkmSDgpJXgpLLgpYfgpJw!5e0!3m2!1sne!2snp!4v1719135148166!5m2!1sne!2snp"

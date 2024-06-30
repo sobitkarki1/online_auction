@@ -191,3 +191,8 @@ textarea,::placeholder {
 .message{
     padding-left: 7px;
 }
+h3{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 60px;
+}

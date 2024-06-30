@@ -16,10 +16,10 @@
             <div class="ray">
           
             <a class="border" href="{{url('/')}}">Home</a>
-            <a class="border" href="/contactus">Contact-us</a>
+            <a class="border" href="{{url('/contactus')}}">Contact-us</a>
             <a class="border" href="{{url('/about')}}">About</a>
-            <a class="border" href="login">Login</a>
-            <a class="border" href="register">Register</a>
+            <a class="border" href="{{url('/login')}}">Login</a>
+            <a class="border" href="{{url('/product')}}">Products</a>
         <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
               
             </div>
