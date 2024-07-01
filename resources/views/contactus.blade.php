@@ -18,8 +18,17 @@
             <a class="border" href="{{url('/')}}">Home</a>
             <a class="border" href="{{url('/contactus')}}">Contact-us</a>
             <a class="border" href="{{url('/about')}}">About</a>
-            <a class="border" href="{{url('/login')}}">Login</a>
-            <a class="border" href="{{url('/product')}}">Products</a>
+            @auth
+        <!-- User is authenticated, show logout link -->
+        <form style="display: inline-block" method="POST" action="{{ route('logout') }}">
+            @csrf
+            <a href="#" onclick="event.preventDefault(); this.closest('form').submit();">Logout</a>
+        </form>
+    @else
+        <!-- User is not authenticated, show login link -->
+        <a class="border" href="{{ route('login') }}">Login</a>
+    @endauth
+            <a class="border" href="product">Product</a>
         <a class="border" href="{{ url('/items/create') }}">Add-Item</a>
             </div>
             <h3>Find us</h3>
@@ -53,7 +62,7 @@
                 </div>
                 <div>
                 <i class="fa-solid fa-envelope"></i>                    <span>
-                        <h5>sandeshsapkota52@gmail.com</h5>
+                        <h5>online.auction577@gmail.com</h5>
                     </span>
                 </div>
             </div>
@@ -77,7 +86,7 @@
         <div class="contactinfo">
             <H5>Contact us </H5>
             <p>You can find us on our social media or you can mail us on our given Email below.
-                <br><u>sandeshsapkota52@gmail.com</u>
+                <br><u>online.auction577@gmail.com</u>
             </p>
             <a href="https://www.facebook.com/Sandeshspk52"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
@@ -104,12 +113,13 @@
 
     <br> <br>
     <footer>
-    <div class="footer">
-            <a class="border last" href="{{url('/about')}}">About</a><br> <br>
-            <a class="border last" href="#">Product</a><br> <br>
-            <a class="border last" href="{{url('/contactus')}}">Contact-Us</a><br> <br>
-            <a class="border last" href="#">Privacy-Policy</a><br> <br>
-            <a class="border last" href="#">Terms Of service</a><br> <br>
+    <footer>
+    <div class="footer"> <br><br>
+            <a class="border last" href="{{url('/about')}}">About</a>
+            <a class="border last" href="{{url('/product')}}">Product</a>
+            <a class="border last" href="{{url('/contactus')}}">Contact-Us</a>
+            <a class="border last" href="{{url('/privacy-policy')}}">Privacy-Policy</a>
+            <a class="border last" href="{{url('/terms')}}">Terms Of service</a>
         </div>
     </footer>
 
