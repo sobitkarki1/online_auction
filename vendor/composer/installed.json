@@ -6300,17 +6300,17 @@
         },
         {
             "name": "spatie/error-solutions",
-            "version": "1.0.2",
-            "version_normalized": "1.0.2.0",
+            "version": "1.0.3",
+            "version_normalized": "1.0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/error-solutions.git",
-                "reference": "9782ba6e25cb026cc653619e01ca695d428b3f03"
+                "reference": "55ea4117e0fde89d520883734ab9b71064c48876"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/error-solutions/zipball/9782ba6e25cb026cc653619e01ca695d428b3f03",
-                "reference": "9782ba6e25cb026cc653619e01ca695d428b3f03",
+                "url": "https://api.github.com/repos/spatie/error-solutions/zipball/55ea4117e0fde89d520883734ab9b71064c48876",
+                "reference": "55ea4117e0fde89d520883734ab9b71064c48876",
                 "shasum": ""
             },
             "require": {
@@ -6336,7 +6336,7 @@
                 "openai-php/client": "Require get solutions from OpenAI",
                 "simple-cache-implementation": "To cache solutions from OpenAI"
             },
-            "time": "2024-06-26T13:09:17+00:00",
+            "time": "2024-06-27T12:22:48+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -6365,7 +6365,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/error-solutions/issues",
-                "source": "https://github.com/spatie/error-solutions/tree/1.0.2"
+                "source": "https://github.com/spatie/error-solutions/tree/1.0.3"
             },
             "funding": [
                 {
@@ -9486,58 +9486,5 @@
         }
     ],
     "dev": true,
-    "dev-package-names": [
-        "brianium/paratest",
-        "doctrine/deprecations",
-        "fakerphp/faker",
-        "fidry/cpu-core-counter",
-        "filp/whoops",
-        "hamcrest/hamcrest-php",
-        "jean85/pretty-package-versions",
-        "laravel/breeze",
-        "laravel/pint",
-        "laravel/sail",
-        "mockery/mockery",
-        "myclabs/deep-copy",
-        "nunomaduro/collision",
-        "pestphp/pest",
-        "pestphp/pest-plugin",
-        "pestphp/pest-plugin-arch",
-        "pestphp/pest-plugin-laravel",
-        "phar-io/manifest",
-        "phar-io/version",
-        "phpdocumentor/reflection-common",
-        "phpdocumentor/reflection-docblock",
-        "phpdocumentor/type-resolver",
-        "phpstan/phpdoc-parser",
-        "phpunit/php-code-coverage",
-        "phpunit/php-file-iterator",
-        "phpunit/php-invoker",
-        "phpunit/php-text-template",
-        "phpunit/php-timer",
-        "phpunit/phpunit",
-        "sebastian/cli-parser",
-        "sebastian/code-unit",
-        "sebastian/code-unit-reverse-lookup",
-        "sebastian/comparator",
-        "sebastian/complexity",
-        "sebastian/diff",
-        "sebastian/environment",
-        "sebastian/exporter",
-        "sebastian/global-state",
-        "sebastian/lines-of-code",
-        "sebastian/object-enumerator",
-        "sebastian/object-reflector",
-        "sebastian/recursion-context",
-        "sebastian/type",
-        "sebastian/version",
-        "spatie/backtrace",
-        "spatie/error-solutions",
-        "spatie/flare-client-php",
-        "spatie/ignition",
-        "spatie/laravel-ignition",
-        "symfony/yaml",
-        "ta-tikoma/phpunit-architecture-test",
-        "theseer/tokenizer"
-    ]
+    "dev-package-names": []
 }
